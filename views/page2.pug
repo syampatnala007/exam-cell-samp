@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    title Exam cell
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  style.
+    
+  body
+    div.col-sm-3
+    br
+    br
+    br
+    div(style='background-color:rgba(105,105, 105, 0.6);')
+      .alert.alert-success.alert-dismissible
+        button.close(type='button', data-dismiss='alert') ×
+        strong #{success}
+      h3 Select Options   
+      .container
+        ul.nav.nav-tabs
+          //li
+            //a(data-toggle='tab', href='#insert') Insert
+          li.active
+            a(data-toggle='tab', href='#action') Action
+        
+        .tab-content
+          #insert.tab-pane.fade
+            center
+              br
+              br
+              br
+              //form(method='get' action='/similar')
+                //input(type='submit' value='insert next record with similar data').btn.btn-info
+              br
+              br
+              form(method='get' action='/new')
+                input(type='submit' value='insert new data').btn.btn-info
+              br
+              br
+              br
+          #action.tab-pane.fade.in.active
+            center
+              br
+              br
+              br
+              br
+              form(method='post',action='/remuneration' target='new')
+                input.btn.btn-info(type='submit' value='click to generate remuneration')
+              br
+              br
+              form(method='post',action='/rl' target='new')
+                input.btn.btn-info(type='submit' value='click to generate releave letter')
+              br
+              br
+              form(method='post',action='/rem')
+                input.btn.btn-info(type='submit' value='click to view all data')
+              br
+              br
+              a.btn.btn-info(href='/') Back To Home
+              br
+              br
+              br
+    div.col-sm-3

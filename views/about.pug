@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    title about
+    meta(charset='UTF-8')
+    meta(name='description', content='generate your identification card')
+    meta(name='keywords', content='thub,techhub')
+    meta(name='author', content=' Siva')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+    style.
+      #dd {
+      border-bottom: 2px solid black;
+      }
+      .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      opacity: 0.9;
+      }
+      .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      }
+      .sidenav a:hover {
+      color: #f1f1f1;
+      }
+      .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      }
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+      }
+      #hh {
+      float: right;
+      }
+      span:hover {
+      color: skyblue;
+      transition-duration: 1s;
+      }
+  body
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+      a(href='/home') Home
+      a(href='/lgn') Login
+      a(href='/aboutpage') About
+      a(href='/contactpage') Contact us
+      a(href='/feedbackpage') Feedback
+
+    .container
+      div#dd
+        span(style='font-size:30px;cursor:pointer', onclick='openNav()') ☰
+        center
+            h1
+              a(href='https://aec.edu.in/' target="_blank") Aditya Engineering College
+      h1 about page
+      center
+        a.btn.btn-info(href='/home') Back To Home
+  script.
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
