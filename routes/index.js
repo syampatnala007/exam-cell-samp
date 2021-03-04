@@ -33,7 +33,7 @@ var dateFormat = require('dateformat');
 //var popupS = require('popups');
 //var confirm = require('confirm-dailog');
 /* GET home page. */
-router.get('/index', function(req, res) {
+router.get('/', function(req, res) {
 	collection.find({},function(err,docs){
 		esa.find({},function(err,docs1){
 			msa.find({},function(err,docs2){
