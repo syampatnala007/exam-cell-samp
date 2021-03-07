@@ -114,39 +114,39 @@ html
             option(value='IMBA') IMBA
           br
           #btechd
-            h1 BTECH OPTIIONS
+            h1 BTECH OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='btech')
               label#programHide mode:
               input#programHide(type='text' name='mode' value='labexaminor')
-              label select the Regulation
+              label Select the Regulation
               select#regulation.form-control(name='regulation', required='')
                 option(value='') ---Select---
                 option(value='AR17') AR17
                 option(value='AR19') AR19
               br
-              label select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in seme
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='Regular') Regular
                 option(value='Supply') Supply
                 option(value='Regularandsupply') Regular/Supply
               br
-              label select the month and date
+              label Select the Month and Date
               input#month.form-control(type='month', name='month')
               br
               
               center
                 input(type='submit' value='next').btn.btn-primary
           #mtechd
-            h1 MTECH OPTIIONS
+            h1 MTECH OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='mtech')
@@ -158,13 +158,13 @@ html
                 option(value='AR17') AR17
                 option(value='AR19') AR19
               br
-              label Select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in msem
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select the Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='Regular') Regular
@@ -178,71 +178,71 @@ html
               center
                 input(type='submit' value='next').btn.btn-primary
           #mbad
-            h1 MBA OPTIIONS
+            h1 MBA OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='mba')
               label#programHide mode:
               input#programHide(type='text' name='mode' value='labexaminor')
-              label select the Regulation
+              label Select the Regulation
               select#regulation.form-control(name='regulation', required='')
                 option(value='') ---Select---
                 option(value='AR17') AR17
                 option(value='AR19') AR19
               br
-              label select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in mbasem
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select the Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='regular') Regular
                 option(value='Supply') Supply
                 option(value='regularandsupply') Regular/supply
               br
-              label select the month and date
+              label Select the Month and Date
               input#month.form-control(type='month', name='month')
               br
               
               center
                 input(type='submit' value='next').btn.btn-primary
           #mcad
-            h1 MCA OPTIIONS
+            h1 MCA OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='mca')
               label#programHide mode:
               input#programHide(type='text' name='mode' value='labexaminor')
-              label select the Regulation
+              label Select the Regulation
               select#regulation.form-control(name='regulation', required='')
                 option(value='') ---Select---
                 option(value='AR17') AR17
                 option(value='AR19') AR19
               br
-              label select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in mcasem
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select the Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='regular') regular
                 option(value='Supply') Supply
                 option(value='regularandsupply') Regular/supply
               br
-              label select the month and date
+              label Select the Month and Date
               input#month.form-control(type='month', name='month')
               br
               
               center
                 input(type='submit' value='next').btn.btn-primary
           #imbad
-            h1 IMBA OPTIIONS
+            h1 IMBA OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='imba')
@@ -254,20 +254,20 @@ html
                 option(value='AR17') AR17
                 option(value='AR19') AR19
               br
-              label select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in isem
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select the Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='regular') regular
                 option(value='Supply') Supply
                 option(value='regularandsupply') Regular/supply
               br
-              label select the month and date
+              label Select the Month and Date
               input#month.form-control(type='month', name='month')
               br
               
@@ -286,31 +286,31 @@ html
             option(value='IMBA') Imba
           br
           #btechdspot
-            h1 BTECH OPTIIONS
+            h1 BTECH OPTIONS
             form(action='/insert', method='post')
               label#programHide program:
               input#programHide(type='text' name='program' value='btech')
               label#programHide mode:
               input#programHide(type='text' name='mode' value='spotevaluator')
-              label select the Regulation
+              label Select the Regulation
               select#regulation.form-control(name='regulation', required='')
                 option(value='') ---Select---
                 option(value='AR17') AR17
                 option(value='AR19') AR19
-              label select the semester
+              label Select the Semester
               select#sem.form-control(name='sem', required='')
                 option(value='') ---Select---
                 each member in seme
                   option(value=member.Semester) #{member.Semester}
               br
-              label select the exam type
+              label Select the Exam Type
               select#examtype.form-control(name='examtype', required='')
                 option(value='') ---Select---
                 option(value='regular') regular
                 option(value='Supply') Supply
                 option(value='regularandsupply') Regular/supply
               br
-              label select the month and date
+              label Select the Month and Date
               input#month.form-control(type='month', name='month')
               br
               
