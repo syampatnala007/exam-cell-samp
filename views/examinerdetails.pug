@@ -40,7 +40,7 @@ html
 							input#mode(type='text',name='mode',value=college_det.mode).form-control
 							br
 							br
-							label program:
+							label Program:
 							input#program(type='text',name='program' value=college_det.program).form-control
 							br
 							br 
@@ -60,11 +60,11 @@ html
 							input#reg(type='text',name='regulation' value=college_det.regulation).form-control
 							br
 							br
-							label from date :
+							label From Date :
 							input#fdate(type='date',name='fromdate',required='').form-control
 							br
 							br
-							label to date :
+							label To Date :
 							input#tdate(type='date',name='todate',required='' onchange="fun()").form-control
 							br
 							br
@@ -73,11 +73,11 @@ html
 							input.iid(type='text',name='EmpID',placeholder='enter examiner id').form-control
 							br.iid
 							br.iid
-							label name :
+							label Name :
 							input(type='text',name='name',placeholder='enter examiner name').form-control
 							br
 							br
-							label.sel1 designation :
+							label.sel1 Designation :
 							select#sel1.form-control(name='designation' )
 								option(value='') ---select---
 								option(value='Assistant_Professor') Assistant professor
@@ -85,7 +85,7 @@ html
 								option(value='Associate_Professor') Associate Professor
 							br.sel1
 							br.sel1
-							label.sel1 college :
+							label.sel1 College :
 							input.sel1(type='text' name='college' required='' placeholder='---select---' list='ctys').form-control
 							datalist#ctys
 								each member in citys
@@ -124,7 +124,7 @@ html
 								option(value='D') D
 							br
 							br
-							label course code:
+							label Course Code:
 							input#sour(type='text' list='courses' name='coursecode' required='' placeholder='---select---' onchange='hai()').form-control
 							datalist#courses
 								each member in ebcc
@@ -159,11 +159,11 @@ html
 							input(type='text',name='bnkname',placeholder='enter examinor bank name',required='').form-control
 							br
 							br
-							label bank account number :
+							label Bank Account Number :
 							input(type='text',name='bank_acc_no',placeholder='enter examinor account no' required='' maxlength='18' id='accnumb' minlength='9').form-control
 							br
 							br
-							label ifsc :
+							label IFSC Code :
 							input(type='text',name='ifsc',placeholder='enter examinor ifsc code' required='' maxlength='12' minlength='10' id='ifname').form-control
 							br
 							br
