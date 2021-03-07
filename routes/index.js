@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 var monk = require('monk');
 var converter = require('number-to-words');
-var db = monk('localhost:27017/aditya');
+var db = monk('mongodb+srv://syampatnala007:11062001syam@examcell.msppj.mongodb.net/aditya?retryWrites=true&w=majority');
 var collection = db.get('examinor');
 var collection1 = db.get('clgdet');
 var collection2=db.get('col2');
 var collection3=db.get('col3');
-var admin = db.get('admin');
+var admin = db.get('Admin');
 var cities=db.get('CitiesDet');
 //----------------------------------AR17---------------
 var esa =db.get('Bexcel');
