@@ -129,7 +129,7 @@ router.post('/form',function(req,res) {
 	}
 	var mode=req.body.mode;
 	if (req.body.mode=='Scrutinizer') {
-		if(req.body.pps=='3₹'){
+		if(req.body.pps=='3'||req.body.pps==3){
 			remunerationP=3;
 		}
 		else{
