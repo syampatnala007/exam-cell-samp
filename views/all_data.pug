@@ -44,6 +44,7 @@ html
 			input#p21(type='text' name='totdays').ppp
 			input#p22(type='text' name='totda').ppp
 			input#p23(type='text' name='totta').ppp
+			input#p23(type='text' name='clg').ppp
 			table#tab.a.table.table-bordered.table-stripped.table-hover
 				thead
 					tr
@@ -73,6 +74,7 @@ html
 						th Total TA
 						th Generate Releave letter
 						th Generate Remunaration
+						th College
 				tbody
 					each member in title
 						tr
@@ -100,6 +102,7 @@ html
 							td #{member.totaldays}
 							td #{member.totalda}
 							td #{member.ta*member.totaldays}
+							td #{member.college}
 							td
 								a
 									input(type='submit' value='Get')
