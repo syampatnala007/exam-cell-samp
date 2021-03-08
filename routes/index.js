@@ -127,6 +127,7 @@ router.post('/form',function(req,res) {
 	else if (req.body.designation=='Associate_Professor') {
 		da=300;
 	}
+	console.log(req.body.mode);
 	if (req.body.mode=='Scrutinizer') {
 		if(req.body.pps=='3₹'){
 			remunerationP=3;
