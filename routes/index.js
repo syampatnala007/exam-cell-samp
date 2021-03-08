@@ -128,7 +128,7 @@ router.post('/form',function(req,res) {
 		da=300;
 	}
 	var mode=req.body.mode;
-	if (mode=='Scrutinizer') {
+	if (req.body.mode=='Scrutinizer') {
 		if(req.body.pps=='3₹'){
 			remunerationP=3;
 		}
