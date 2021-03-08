@@ -164,7 +164,7 @@ router.post('/form',function(req,res) {
 	var remuneration=remunerationP*c;
 	var totaldays=Math.floor(a/86400)+1;
 	var dad=da*totaldays;
-	var total=ta+ta+dad+remuneration;
+	var total=ta+dad+remuneration;
 	console.log(dad)
 	console.log(total)
 	var totalinwords=converter.toWords(total);
